@@ -22,3 +22,8 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
