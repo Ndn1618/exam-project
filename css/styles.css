@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("ProductSans-Bold.woff2") format("woff2"),
+      url("ProductSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("ProductSans-BoldItalic.woff2") format("woff2"),
+      url("ProductSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("ProductSans-Regular.woff2") format("woff2"),
+      url("ProductSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url("ProductSans-Italic.woff2") format("woff2"),
+      url("ProductSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 html {
   box-sizing: border-box;
 }
@@ -7,8 +42,8 @@ html {
   box-sizing: inherit;
 }
 .container {
-  max-width: 1240px;
-  padding: 0 20px;
+  max-width: 1148px;
+  padding: 0 24px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -25,5 +60,185 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Product Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  background-color: #fff;
+}
+.blue-button {
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  background-color: #00BAFC;
+  border-radius: 5px;
+  color: #fff;  
+}
+.blue-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #00BAFC;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;  
+}
+/* HEADER */
+.header-top {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.header-top-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo-img {
+  display: block;
+  width: 58.11px;
+  height: 20px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.header-top-link {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header-top-item {
+  margin-right: 32px;
+}
+.header-top-item a {
+  color: #000;
+  text-decoration: none;
+}
+.header-bottom {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.header-bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-bottom-left {
+  width: 465px;
+}
+.header-left-heading {
+  font-size: 30px;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.header-left-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+/* HEADER BOTTOM RIGHT VIDEO  */
+
+/* MAIN */
+.divider {
+  width: 300px;
+  height: 3px;
+  background-color: #eee;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+/* SERVICES SECTION */
+.services {
+  text-align: center;
+  padding-bottom: 56px;
+}
+.services-heading {
+  font-size: 24px;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.services-text {
+  width: 719px;
+  margin: 0 auto 24px;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.services-item {
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 24px 59px 24px;
+  margin-right: 70px;
+  margin-bottom: 48px;
+}
+.services-item:nth-child(3n) {
+  margin-right: 0;
+}
+.services-item img {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.services-item-heading {
+  font-size: 20px;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.services-item-text {
+  margin: 0;
+}
+.services-footer-link {
+  display: inline-block;
+  color: #00BAFC;
+  margin-left: 16px;
+  text-decoration: none;
+  border-bottom: 2px solid #00BAFC;
+}
+/* HOW WE WORK SECTION  */
+.working-section-top,
+.button-center {
+  text-align: center;
+}
+.how-we-work {
+  margin-bottom: 56px;
+}
+.how-we-work-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 48px;
+}
+.how-we-work-img {
+  display: block;
+}
+.working-left-img {
+  margin-right: 32px;
+}
+.working-right-img {
+  margin-left: 32px;
+}
+.how-we-work-content {
+  max-width: 493px;
+}
+.working-heading {
+  font-size: 20px;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.working-text {
+  margin: 0 8px;
 }
