@@ -184,7 +184,7 @@ body {
   background-image: url("../img/youtube-play-button.svg"),
     url("../img//youtube.jpg");
   background-position: center center;
-  background-size: 150px contain;
+  background-size: 150px, contain;
   background-repeat: no-repeat;
   opacity: 0.9;
   border-radius: 5px;
